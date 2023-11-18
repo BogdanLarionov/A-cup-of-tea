@@ -11,7 +11,9 @@
       href="https://fonts.googleapis.com/css2?family=Abel&family=Cormorant:ital,wght@0,400;1,300&family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap"
       rel="stylesheet" />
   </head>
+
   <body>
+    <div class="menu--close"></div>
     <header class="header">
       <div class="container">
         <div class="header__inner">
@@ -28,6 +30,11 @@
             </button>
 
             <ul class="menu__list">
+              <li class="menu__close">
+                <button class="menu__close-btn">
+                  <img src="images/close.svg" alt="close" />
+                </button>
+              </li>
               <li class="menu__item">
                 <a href="#" class="menu__link">Black</a>
               </li>
@@ -42,6 +49,42 @@
               </li>
               <li class="menu__item">
                 <a href="#" class="menu__link">Pu-erh</a>
+              </li>
+
+              <li class="mobile-nav">
+                <ul class="mobile-menu">
+                  <!--  li.mobile-menu__item*3>a.mobile__menu-link[href=#] -->
+                  <li class="mobile-menu__item">
+                    <a href="#" class="mobile__menu-link">Contact Us</a>
+                  </li>
+                  <li class="mobile-menu__item">
+                    <a href="#" class="mobile__menu-link">Our Blog</a>
+                  </li>
+                  <li class="mobile-menu__item">
+                    <a href="#" class="mobile__menu-link"
+                      >Shipping and Delivery</a
+                    >
+                  </li>
+                </ul>
+                <ul class="mobile-actions">
+                  <!-- --- -->
+                  <li class="mobile-actions__item">
+                    <a href="#" class="mobile-octions__link"
+                      ><img src="images/cart.svg" alt="cart" />
+                    </a>
+                  </li>
+                  <li class="mobile-actions__item">
+                    <a href="#" class="mobile-octions__link"
+                      ><img src="images/user.svg" alt="user" />
+                    </a>
+                  </li>
+                  <li class="mobile-actions__item">
+                    <a href="#" class="mobile-octions__link-search"
+                      ><img src="images/search.svg" alt="search" />
+                    </a>
+                  </li>
+                  <!-- ---- -->
+                </ul>
               </li>
             </ul>
           </nav>
@@ -97,5 +140,8 @@
         </p>
       </blockquote>
     </main>
+    <script src="js/script.js"></script>
   </body>
 </html>
+
+<!-- https://from0to1.com.ua/ -->
