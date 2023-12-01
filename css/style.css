@@ -261,7 +261,7 @@ body {
   font-family: "Cormorant", serif, serif;
   font-weight: 400;
   font-size: 24px;
-  min-height: 86px;
+  min-height: 86;
 }
 
 .main-blog__item-author {
@@ -276,6 +276,74 @@ body {
   font-size: 13px;
   /* font-weight: 300; */
   font-family: Open Sans;
+  position: relative;
+}
+
+.main-blog__item-link::after {
+  content: "";
+  background-image: url(../images/arrow.svg);
+  height: 10px;
+  width: 5px;
+  position: absolute;
+  margin-left: 8px;
+  bottom: 3px;
+}
+
+.main-blog__link {
+  display: flex;
+  justify-content: center;
+  padding: 12px 41px;
+  margin: 72px auto 0;
+  border: 1px solid #151618;
+  width: 152px;
+}
+
+.mailing-list {
+  padding: 100px 0;
+  background-color: #f7f2ea;
+  background-image: url(../images/mail_bg.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  font-family: "Cormorant", serif;
+}
+
+.mailing-list__title {
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+.mailing-list__inner {
+  display: flex;
+  gap: 60px 40px;
+}
+
+.mailing-list__text {
+  line-height: 1.5;
+}
+
+.mailing-list__form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mailing-list__email {
+  border: none;
+  border-bottom: 1px solid #b8b58b;
+  background-color: transparent;
+  padding: 3px 15px;
+  width: 440px;
+  margin-right: 25px;
+}
+
+.mailing-list__email::placeholder {
+  font-family: "Open Sans", sans-serif;
+  font-style: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 150%;
+}
+
+.mailing-list__btn {
 }
 
 @media (max-width: 1000px) {
